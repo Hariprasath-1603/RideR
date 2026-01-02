@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'theme/app_colors.dart';
-import 'screens/login/login_screen.dart';
+import 'screens/temp_home_screen.dart';
 
 void main() {
   runApp(const RiderApp());
@@ -24,7 +24,7 @@ class RiderApp extends StatelessWidget {
         fontFamily: 'SF Pro Display',
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      home: const TempHomeScreen(),
     );
   }
 }
