@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'theme/app_colors.dart';
 import 'screens/temp_home_screen.dart';
 
+/// Entry point of the Rider application.
+/// 
+/// Initializes and runs the [RiderApp] widget.
 void main() {
   runApp(const RiderApp());
 }
