@@ -10,6 +10,11 @@ void main() {
 }
 
 /// Main Application Widget
+/// 
+/// Configures the root MaterialApp with:
+/// - Custom theme based on [AppColors]
+/// - SF Pro Display font family
+/// - Material 3 design system
 class RiderApp extends StatelessWidget {
   const RiderApp({super.key});
 
