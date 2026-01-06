@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'theme/app_colors.dart';
-import 'screens/temp_home_screen.dart';
+import 'screens/premium/intro_screen.dart';
 
 /// Entry point of the Rider application.
 /// 
@@ -25,14 +25,16 @@ class RiderApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: AppColors.darkEspresso,
-          primary: AppColors.darkEspresso,
+          seedColor: AppColors.premiumGold,
+          primary: AppColors.premiumGold,
+          background: AppColors.luxuryWhite,
         ),
-        scaffoldBackgroundColor: AppColors.creamGrey,
+        scaffoldBackgroundColor: AppColors.luxuryWhite,
         fontFamily: 'SF Pro Display',
         useMaterial3: true,
       ),
-      home: const TempHomeScreen(),
+      // Choose starting screen: PremiumIntroScreen or LoginScreen
+      home: const PremiumIntroScreen(),
     );
   }
 }
